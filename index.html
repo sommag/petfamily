@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I miei animali</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fur family 🐾</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>La mia crew pelosa 🐾</h1>
+  <h1> Paws are family and every cuddle counts.🐾</h1>
 
-  <div class="carousel-container">
-    <div class="carousel-track" id="carouselTrack">
-      <div class="slide">
-        <img src="https://place-puppy.com/600x400" alt="Cane 1">
-        <h2>Pippo</h2>
-        <p>Il dormiglione ufficiale di casa 💤</p>
-      </div>
-      <div class="slide">
-        <img src="https://placekitten.com/600/400" alt="Gatto">
-        <h2>Micia</h2>
-        <p>Regina del divano e delle coccole 👑</p>
-      </div>
-      <div class="slide">
-        <img src="https://place-puppy.com/601x400" alt="Cane 2">
-        <h2>Pluto</h2>
-        <p>Il più vivace, ama inseguire le api! 🐝</p>
-      </div>
+  <div class="animal-card">
+    <h2>Jilly</h2>
+    <div class="image-container">
+      <button class="nav-button prev" onclick="prevImage('jilly')">❮</button>
+      <img id="jilly-image" src="img/jilly.jpg" alt="Jilly" />
+      <button class="nav-button next" onclick="nextImage('jilly')">❯</button>
     </div>
+    <p>Jilly is the undisputed princess of the house. Elegant, sweet, and full of personality. She was the first to steal everyone’s heart and always knows how to get cuddles… with impeccable style, of course. 👑✨</p>
   </div>
 
-  <div class="buttons">
-    <button onclick="prevSlide()">⬅️ Indietro</button>
-    <button onclick="nextSlide()">Avanti ➡️</button>
+  <div class="animal-card">
+    <h2>Pippo</h2>
+    <div class="image-container">
+      <button class="nav-button prev" onclick="prevImage('pippo')">❮</button>
+      <img id="pippo-image" src="img/pippo.jpg" alt="Pippo" />
+      <button class="nav-button next" onclick="nextImage('pippo')">❯</button>
+    </div>
+    <p>Pippo is a true gentleman with a noble heart. Calm, protective, and endlessly curious. There’s no bush he wouldn’t sniff! He’s the perfect companion for every walk. 🐾🧐</p>
+  </div>
+
+  <div class="animal-card">
+    <h2>Saverio</h2>
+    <div class="image-container">
+      <button class="nav-button prev" onclick="prevImage('saverio')">❮</button>
+      <img id="saverio-image" src="img/saverio.jpg" alt="Saverio" />
+      <button class="nav-button next" onclick="nextImage('saverio')">❯</button>
+    </div>
+    <p>Saverio is the first cat who truly won me over. Shy at first, he turned out to be the sweetest cuddle bug. He naps just about anywhere, loves being petted, and has that clever little look that melts your heart. 😴💖</p>
   </div>
 
   <script src="script.js"></script>

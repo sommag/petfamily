@@ -1,72 +1,62 @@
 body {
-  font-family: Arial, sans-serif;
+  background-color: #1A1A1A;
+  color: #F0F0F0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background-color: #fffbee;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.carousel-container {
-  width: 90%;
-  max-width: 600px;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
   padding: 20px;
-  background-color: white;
   text-align: center;
 }
 
-.slide img {
-  max-width: 100%;
-  height: auto;
+h1 {
+  margin-bottom: 40px;
+  color: #F0F0F0;
+}
+
+.animal-card {
+  background-color: #2A2A2A;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
   border-radius: 10px;
 }
 
-.slide h2 {
-  margin: 10px 0 5px;
-}
-
-.slide p {
-  font-size: 0.9rem;
-}
-
-.buttons {
-  margin-top: 15px;
-}
-
-.buttons button {
-  padding: 10px 20px;
-  margin: 0 5px;
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
   border: none;
-  background-color: #f4c430;
-  color: white;
-  border-radius: 8px;
+  color: #F0F0F0;
+  font-size: 2rem;
+  padding: 10px;
   cursor: pointer;
-  font-weight: bold;
+  border-radius: 50%;
 }
 
-.buttons button:hover {
-  background-color: #d9aa00;
+.nav-button.prev {
+  left: 10px;
 }
 
+.nav-button.next {
+  right: 10px;
+}
 
+p {
+  margin-top: 20px;
+  line-height: 1.5;
+}
