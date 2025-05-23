@@ -4,39 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pet Family 🐾</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Paws are family and every cuddle counts 🐾</h1>
 
   <div class="card-container">
-    <div class="animal-card">
-      <img id="jilly-image" class="animal-image" src="img/jilly11.jpg" alt="Jilly" />
+    <div class="animal-card" onclick="openModal('jilly')">
+      <img class="animal-image" src="img/jilly11.jpg" alt="Jilly" />
       <div class="card-content">
         <h2>Jilly</h2>
-        <p>
-          Jilly is the undisputed princess of the house. Elegant, sweet, and full of personality. She steal everyone’s heart and always knows how to get cuddles… with impeccable style, of course.
-        </p>
+        <p>Jilly is the undisputed princess of the house. Elegant, sweet, and full of personality.</p>
       </div>
     </div>
 
-    <div class="animal-card">
-      <img id="pippo-image" class="animal-image" src="img/pippo12.jpg" alt="Pippo" />
+    <div class="animal-card" onclick="openModal('pippo')">
+      <img class="animal-image" src="img/pippo12.jpg" alt="Pippo" />
       <div class="card-content">
         <h2>Pippo</h2>
-        <p>
-          Pippo is a true gentleman with a noble heart. Calm, protective, and endlessly curious. There’s no bush he wouldn’t sniff!
-        </p>
+        <p>Pippo is a true gentleman with a noble heart. Calm, protective, and curious.</p>
       </div>
     </div>
 
-    <div class="animal-card">
-      <img id="saverio-image" class="animal-image" src="img/saverio.jpg" alt="Saverio" />
+    <div class="animal-card" onclick="openModal('saverio')">
+      <img class="animal-image" src="img/saverio.jpg" alt="Saverio" />
       <div class="card-content">
         <h2>Saverio</h2>
-        <p>
-          Saverio is the first cat who truly won me over. Shy at first, he turned out to be the sweetest cuddle bug.
-        </p>
+        <p>Saverio is the sweetest cuddle bug. Shy at first, but irresistibly adorable.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modal-image" src="" alt="" />
+      <div class="modal-controls">
+        <button onclick="prevPopupImage()">❮</button>
+        <button onclick="nextPopupImage()">❯</button>
       </div>
     </div>
   </div>
