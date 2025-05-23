@@ -1,4 +1,4 @@
-alert("JS caricato!");
+
 
 const galleries = {
   jilly: ['img/jilly11.jpg', 'img/jilly2.jpg', 'img/jilly3.jpg'],
