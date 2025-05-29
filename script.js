@@ -1,9 +1,9 @@
 
 
 const galleries = {
-  jilly: ['img/jilly11.jpg', 'img/jilly2.jpg', 'img/jilly3.jpg'],
-  pippo: ['img/pippo12.jpg', 'img/pippo2.jpg', 'img/pippo3.jpg'],
-  saverio: ['img/saverio.jpg', 'img/saverio2.jpg', 'img/saverio3.jpg']
+  jilly: ['img/jilly11.jpg', 'img/jilly12.jpg', 'img/jilly10.jpg','img/jilly9.jpg','img/jilly8.jpg'],
+  pippo: ['img/pippo12.jpg', 'img/pippo7.jpg', 'img/pippo10.jpg', 'img/pippo11.jpg','img/pippo4.jpg'],
+  saverio: ['img/saverio.jpg', 'img/saverio2.jpg', 'img/saverio3.jpg', 'img/saverio5.jpg', 'img/saverio4.jpg']
 };
 
 let currentAnimal = '';
