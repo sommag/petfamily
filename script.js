@@ -35,3 +35,16 @@ function prevPopupImage() {
   currentIndex = (currentIndex - 1 + galleries[currentAnimal].length) % galleries[currentAnimal].length;
   showPopupImage();
 }
+
+document.getElementById('popup-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (document.getElementById('popup-modal').style.display === 'flex') {
+    if (e.key === 'ArrowRight') nextPopupImage();
+    if (e.key === 'ArrowLeft') prevPopupImage();
+    if (e.key === 'Escape') closeModal();
+  }
+});
+

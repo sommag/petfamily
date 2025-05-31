@@ -36,16 +36,29 @@
     </div>
   </div>
 
-  <div id="popup-modal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <img id="modal-image" src="" alt="" />
-      <div class="modal-controls">
-        <button onclick="prevPopupImage()">❮</button>
-        <button onclick="nextPopupImage()">❯</button>
-      </div>
-    </div>
+<div id="popup-modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <button class="nav-button left" onclick="prevPopupImage()">❮</button>
+    <img id="modal-image" src="" alt="" />
+    <button class="nav-button right" onclick="nextPopupImage()">❯</button>
   </div>
+</div>
+
+<section class="pet-quotes">
+
+  <blockquote>“Until one has loved an animal, a part of one’s soul remains unawakened.”<br>— Anatole France</blockquote>
+  <blockquote>“The smallest feline is a masterpiece.”<br>— Leonardo da Vinci</blockquote>
+  <blockquote>“Dogs do speak, but only to those who know how to listen.”<br>— Orhan Pamuk</blockquote>
+</section>
+
+
+
+
+  <footer>
+    <p>Created with ❤️ by Giusy – Because paws are family</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
