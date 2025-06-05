@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
   color: #1a1a1a;
@@ -11,19 +12,61 @@ body {
   padding: 40px 20px;
   text-align: center;
 }
-h1 {
-  font-size: 2rem;
-  margin-bottom: 60px;
-  font-weight: 500;
+
+/* Hero Section */
+.hero-section {
+  background-color: #fffaf3;
+  padding: 4rem 1rem 0 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.logo-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  color: #4e342e;
+  letter-spacing: 0.5px;
+  margin: 0 auto 2rem auto;
+  max-width: 90%;
+  line-height: 1.3;
+}
+
+.styled-word {
+  background: linear-gradient(45deg, #f4a259, #f7c04a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #f4a259;
+  font-style: italic;
+}
+
+.wave-divider {
+  line-height: 0;
+  margin-top: -1px;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+
+/* Cards */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto 0;
 }
+
 .animal-card {
   background-color: #f9f9f9;
   border-radius: 20px;
@@ -33,28 +76,35 @@ h1 {
   transition: transform 0.2s ease;
   cursor: pointer;
 }
+
 .animal-card:hover {
   transform: scale(1.02);
 }
+
 .animal-image {
   width: 100%;
   height: 240px;
   object-fit: cover;
   display: block;
 }
+
 .card-content {
   padding: 24px;
   text-align: left;
 }
+
 .animal-card h2 {
   font-size: 1.4rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
+
 .animal-card p {
   font-size: 0.95rem;
   color: #333;
 }
+
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -85,24 +135,6 @@ h1 {
   max-height: 70vh;
   border-radius: 10px;
 }
-.modal-controls {
-  margin-top: 10px;
-}
-
-.modal-controls button {
-  background: none;
-  border: none;
-  color: #1a1a1a;
-  font-size: 2rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.2s ease;
-  padding: 0 10px;
-}
-
-.modal-controls button:hover {
-  transform: scale(1.2);
-  color: #000;
-}
 
 .nav-button {
   position: absolute;
@@ -119,7 +151,7 @@ h1 {
 }
 
 .nav-button:hover {
-transform: translateY(-50%) scale(1.2);
+  transform: translateY(-50%) scale(1.2);
   color: #000;
 }
 
@@ -130,8 +162,6 @@ transform: translateY(-50%) scale(1.2);
 .nav-button.right {
   right: -40px;
 }
-
-
 
 .close {
   position: absolute;
@@ -150,7 +180,7 @@ transform: translateY(-50%) scale(1.2);
   color: #000;
 }
 
-
+/* Stories */
 .pet-stories {
   margin: 4rem auto;
   max-width: 900px;
@@ -179,45 +209,27 @@ transform: translateY(-50%) scale(1.2);
 }
 
 .story h3 {
-  margin-top: 0;
-  position: relative;
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  padding-left: 1.8rem;
-
-  display: inline-block;
   background-color: #fff1d6;
   padding: 0.4rem 0.8rem;
   border-radius: 12px;
+  display: inline-block;
   color: #444;
-  font-weight: 600;
 }
 
-.story h3::before {
-
- position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.2rem;
-}
 .story p {
   color: #555;
   line-height: 1.6;
 }
 
-
+/* Quotes */
 .pet-quotes {
   margin: 80px auto;
   max-width: 800px;
   padding: 0 20px;
   text-align: center;
-}
-
-.pet-quotes h2 {
-  font-size: 1.6rem;
-  margin-bottom: 30px;
-  font-weight: 500;
 }
 
 .pet-quotes blockquote {
@@ -227,10 +239,9 @@ transform: translateY(-50%) scale(1.2);
   color: #555;
 }
 
-
+/* Footer */
 footer {
   margin-top: 80px;
   font-size: 0.9rem;
   color: #888;
 }
-
