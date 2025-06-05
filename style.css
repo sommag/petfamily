@@ -151,6 +151,62 @@ transform: translateY(-50%) scale(1.2);
 }
 
 
+.pet-stories {
+  margin: 4rem auto;
+  max-width: 900px;
+  padding: 0 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.pet-stories h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.story {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.story:hover {
+  transform: translateY(-5px);
+}
+
+.story h3 {
+  margin-top: 0;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-left: 1.8rem;
+
+  display: inline-block;
+  background-color: #fff1d6;
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  color: #444;
+  font-weight: 600;
+}
+
+.story h3::before {
+
+ position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+}
+.story p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
 .pet-quotes {
   margin: 80px auto;
   max-width: 800px;
