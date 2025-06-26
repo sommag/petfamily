@@ -1,5 +1,3 @@
-
-
 const galleries = {
   jilly: ['img/jilly11.jpg', 'img/jilly12.jpg', 'img/jilly10.jpg','img/jilly9.jpg','img/jilly8.jpg'],
   pippo: ['img/pippo12.jpg', 'img/pippo7.jpg', 'img/pippo10.jpg', 'img/pippo11.jpg','img/pippo4.jpg'],
@@ -48,17 +46,17 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-// Swipe touch support
+// 🔄 Swipe Touch Support (sull'immagine)
 let startX = 0;
 let endX = 0;
 
-const modal = document.getElementById('popup-modal');
+const modalImg = document.getElementById('modal-image');
 
-modal.addEventListener('touchstart', (e) => {
+modalImg.addEventListener('touchstart', (e) => {
   startX = e.touches[0].clientX;
 }, false);
 
-modal.addEventListener('touchend', (e) => {
+modalImg.addEventListener('touchend', (e) => {
   endX = e.changedTouches[0].clientX;
   const diffX = startX - endX;
 
