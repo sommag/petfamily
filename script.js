@@ -48,3 +48,25 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
+// Swipe touch support
+let startX = 0;
+let endX = 0;
+
+const modal = document.getElementById('popup-modal');
+
+modal.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+}, false);
+
+modal.addEventListener('touchend', (e) => {
+  endX = e.changedTouches[0].clientX;
+  const diffX = startX - endX;
+
+  if (Math.abs(diffX) > 50) {
+    if (diffX > 0) {
+      nextPopupImage(); // swipe sinistra → avanti
+    } else {
+      prevPopupImage(); // swipe destra → indietro
+    }
+  }
+}, false);
